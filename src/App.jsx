@@ -1,7 +1,13 @@
+import { Outlet } from "react-router-dom"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+
 function App() {
   return (
     <div className='App'>
-      <h1 className="text-2xl font-bold">Welcome to nextPage!</h1>
+      <Header />
+      <Outlet />
+      <Footer />
     </div>
   )
 }
